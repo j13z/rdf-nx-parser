@@ -1,0 +1,22 @@
+{
+  "name": "rdf-nx-parser",
+  "version": "1.0.0",
+  "description": "Non-validating tokenizer / parser for the RDF N-Triples and N-Quads serializations (or any \"N-x\")",
+  "main": "./lib/rdf-nx-parser.js",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec"
+  },
+  "keywords": [
+    "RDF",
+    "N-Triples",
+    "N-Quads",
+    "parser",
+    "N-x"
+  ],
+  "author": "Johannes Schmitz",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "*",
+    "mocha": "*"
+  }
+}
