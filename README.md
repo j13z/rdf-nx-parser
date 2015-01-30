@@ -22,7 +22,7 @@ var parser = require('rdf-nx-parser');
 
 ### Parsing
 
-Use `parseTriple()` to parse an N-Triples line, `parseQuads()`  for N-Quads. Both return an array of objects, or `null` if the input can't be parsed.
+Use `parseTriple()` to parse an N-Triples line, `parseQuads()`  for N-Quads. Both return an objects, or `null` if the input can't be parsed.
 
 ```javascript
 var quad = parser.parseQuad(
@@ -95,7 +95,7 @@ Parsing a whole file of N-Triples / N-Quads lines can be easily done e. g. wit
 
 ### Tokenization
 
-An arbitrary number of “N-x” tokens can be extracted from a string into token objects with the `tokenize()` method.
+An arbitrary number of “N-x” tokens can be extracted from a string into an array of token objects with the `tokenize()` method:
 
 ```javavscript
 > parser.tokenize(
