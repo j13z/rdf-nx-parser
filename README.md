@@ -4,6 +4,8 @@ A non-validating tokenizer and parser for the RDF N-Triples and N-Quads serializ
 
 Provides parsing of N-Triples and N-Quads from strings, or tokenizing any “N-x” string.
 
+![](https://travis-ci.org/j13z/rdf-nx-parser.svg?branch=master)
+
 
 ## Why?
 
@@ -20,9 +22,10 @@ The module exports a parser object:
 var parser = require('rdf-nx-parser');
 ```
 
+
 ### Parsing
 
-Use `parseTriple()` to parse an N-Triples line, `parseQuads()`  for N-Quads. Both return an objects, or `null` if the input can't be parsed.
+Use `parseTriple()` to parse an N-Triples statement, `parseQuads()`  for N-Quads. Both return an objects, or `null` if the input can't be parsed.
 
 ```javascript
 var quad = parser.parseQuad(
@@ -57,7 +60,7 @@ console.log(JSON.stringify(quad, null, 4));
 }
 ```
 
-Literal objects can have a `language` or `datatypeIri` property.
+Literal objects can have an additional `language` or `datatypeIri` property.
 
 The parser does not verify that the data adheres to the [grammar] [1]. It will instead happily parse anything as good as it can:
 
@@ -70,7 +73,7 @@ The parser does not verify that the data adheres to the [grammar] [1]. It will i
   graphLabel: { type: 'iri', value: '$!#]&' } }
 ```
 
-You can pass an optional options object to these methods as a second parameter, shown with the defaults here:
+You can optionally pass an options object to these methods as a second parameter, shown with the defaults here:
 
 ```javascript
 parser.parseTriple(input, {
@@ -88,7 +91,7 @@ parser.parseTriple(input, {
 });
 ```
 
-Parsing a whole file of N-Triples / N-Quads lines can be easily done e. g. with Node's `readline` module, see the [example](example/example.js).
+Parsing a whole file of N-Triples / N-Quads lines can easily be done e. g. with Node's `readline` module, see the [example](example/example.js).
 
 [1]: http://www.w3.org/TR/n-triples/#n-triples-grammar
 
