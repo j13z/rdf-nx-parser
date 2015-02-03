@@ -9,7 +9,7 @@ Provides parsing of N-Triples and N-Quads from strings, or tokenizing any “N-x
 
 ## Why?
 
-There are enough parsers already that are faster (see last section), but having a parser for Node.js is useful for building smaller tools.
+There are enough parsers already that are faster (see last section), but having a parser for Node.js is useful for building [smaller tools](https://github.com/j13z/nxfilter).
 
 
 ## Usage
