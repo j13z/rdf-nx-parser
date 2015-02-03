@@ -1,7 +1,7 @@
 {
   "name": "rdf-nx-parser",
   "version": "1.0.1",
-  "description": "Non-validating tokenizer / parser for the RDF N-Triples and N-Quads serializations (or any \"N-x\")",
+  "description": "Non-validating tokenizer / parser for the RDF N-Triples and N-Quads serializations (or any “N-x”)",
   "main": "./lib/rdf-nx-parser.js",
   "repository": {
     "type": "git",
