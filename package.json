@@ -8,7 +8,7 @@
     "url": "https://github.com/j13z/rdf-nx-parser.git"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec"
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --reporter spec"
   },
   "keywords": [
     "RDF",
@@ -21,6 +21,7 @@
   "license": "MIT",
   "devDependencies": {
     "chai": "*",
+    "istanbul": "^0.3.15",
     "mocha": "*"
   }
 }
