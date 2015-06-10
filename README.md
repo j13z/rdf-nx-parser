@@ -4,7 +4,7 @@ A non-validating tokenizer and parser for the RDF N-Triples and N-Quads serializ
 
 Provides parsing of N-Triples and N-Quads from strings, or tokenizing any “N-x” string.
 
-![](https://travis-ci.org/j13z/rdf-nx-parser.svg?branch=master)
+![](https://badge.fury.io/js/rdf-nx-parser.svg) &ensp; ![](https://travis-ci.org/j13z/rdf-nx-parser.svg?branch=master)
 
 
 ## Why?
@@ -130,9 +130,8 @@ The implementation is based on regular expressions (to split the input into toke
 
 ## Tests
 
-Use [mocha](http://mochajs.org/) (runner) + [Chai](http://chaijs.com/) (assertion library).
+Run with: `npm test` ([mocha](http://mochajs.org/), [Chai](http://chaijs.com/), [Istanbul](https://github.com/gotwarlost/istanbul))
 
-Run: `npm test`
 
 
 
