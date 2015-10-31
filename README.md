@@ -4,8 +4,7 @@ A non-validating tokenizer and parser for the RDF N-Triples and N-Quads serializ
 
 Provides parsing of N-Triples and N-Quads from strings, or tokenizing any “N-x” string.
 
-[![](https://badge.fury.io/js/rdf-nx-parser.svg)](https://www.npmjs.com/package/rdf-nx-parser) &ensp; [![](https://travis-ci.org/j13z/rdf-nx-parser.svg?branch=master)](https://travis-ci.org/j13z/rdf-nx-parser/builds/)
-
+[![](https://badge.fury.io/js/rdf-nx-parser.svg)](https://www.npmjs.com/package/rdf-nx-parser) &ensp; [![](https://travis-ci.org/j13z/rdf-nx-parser.svg?branch=master)](https://travis-ci.org/j13z/rdf-nx-parser/builds/) &ensp; [![Coverage Status](https://coveralls.io/repos/j13z/rdf-nx-parser/badge.svg?branch=&service=github)](https://coveralls.io/github/j13z/rdf-nx-parser?branch=)
 
 ## Why?
 
