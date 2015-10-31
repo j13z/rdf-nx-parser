@@ -16,11 +16,34 @@ function testCommon(type) {
 	var graphLabel = isQuad ? '<http://example.com/p>' : '';
 
 
-	it('should parse a valid ' + type, function () {
+	it('should parse a valid ' + type + ' string', function () {
 
 		var result = parse(
 			' _:s  <http://example.com/p>    "o"@en	' + graphLabel + '	.    '
 		);
+
+		result.subject.type.should.equal('blankNode');
+		result.subject.value.should.equal('s');
+
+		result.predicate.type.should.equal('iri');
+		result.predicate.value.should.equal('http://example.com/p');
+
+		result.object.type.should.equal('literal');
+		result.object.value.should.equal('o');
+		result.object.language.should.equal('en');
+
+		if (isQuad) {
+			result.graphLabel.type.should.equal('iri');
+			result.graphLabel.value.should.equal('http://example.com/p');
+		}
+	});
+
+
+	it('should parse a valid ' + type + ' token array', function () {
+
+		var input = ' _:s  <http://example.com/p>    "o"@en	' + graphLabel + '	.    ';
+		var tokens = parser.tokenize(input);
+		var result = parse(tokens);
 
 		result.subject.type.should.equal('blankNode');
 		result.subject.value.should.equal('s');

@@ -3,7 +3,7 @@
 /* exported should */
 
 var should = require('chai').should();
-// var expect = require('chai').expect;
+var expect = require('chai').expect;
 var parser = require('../');
 
 
@@ -75,6 +75,13 @@ describe('tokenize', function () {
 		tokens.forEach(function (token) {
 			token.should.be.a('string');
 		});
+	});
+
+
+	it('should return `null` for empty input', function () {
+
+		var result = parser.tokenize('');
+		expect(result).to.equal(null);
 	});
 });
 
