@@ -20,8 +20,8 @@
   "author": "Johannes Schmitz",
   "license": "MIT",
   "devDependencies": {
-    "chai": "^3.2.0",
-    "istanbul": "^0.3.17",
+    "chai": "^3.4.0",
+    "istanbul": "^0.4.0",
     "mocha": "*"
   }
 }
