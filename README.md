@@ -128,6 +128,11 @@ Each token has at least a `type` and a `value` property. There are four token ty
 The implementation is based on regular expressions (to split the input into tokens) – they are pretty fast on V8. This regex-based implementation is faster than a previous simple state machine (that read the input in one scan). Seems like regexes can be compiled more effectively into machine code.
 
 
+## Node.js version support
+
+Works with Node.js 0.10 [and higher](./.travis.yml).
+
+
 ## Tests
 
 Run with: `npm test` ([mocha](http://mochajs.org/), [Chai](http://chaijs.com/), [Istanbul](https://github.com/gotwarlost/istanbul))
